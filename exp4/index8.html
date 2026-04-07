@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Wonders of India — Aishwarya Kadam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>7 Wonders of India</h1>
+  <p>Iconic Monuments & Heritage</p>
+</header>
+
+<!-- FILTER -->
+<div class="buttons">
+  <button class="active" onclick="filterImages('all', this)">All</button>
+  <button onclick="filterImages('temple', this)">Temple</button>
+  <button onclick="filterImages('fort', this)">Fort</button>
+  <button onclick="filterImages('monument', this)">Monument</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+  <img src="https://tse3.mm.bing.net/th/id/OIP.wMveekAjPutZU9fXbXBfQwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+       class="monument"
+       data-name="Taj Mahal"
+       data-location="Agra, Uttar Pradesh"
+       data-built="1632"
+       data-type="Monument"
+       onclick="openModal(this)">
+
+  <img src="https://tse3.mm.bing.net/th/id/OIP.SKCU-9QNUDsS1QXnwVoKUAHaE3?rs=1&pid=ImgDetMain&o=7&rm=3"
+       class="monument"
+       data-name="Qutub Minar"
+       data-location="Delhi"
+       data-built="1193"
+       data-type="Monument"
+       onclick="openModal(this)">
+
+  <img src="https://static1.thetravelimages.com/wordpress/wp-content/uploads/2023/07/red-fort.jpg"
+       class="fort"
+       data-name="Red Fort"
+       data-location="Delhi"
+       data-built="1639"
+       data-type="Fort"
+       onclick="openModal(this)">
+
+  <img src="https://cdn1.goibibo.com/voy_ing/t_fs/new-delhi-india-gate-14762336065o.jpeg"
+       class="monument"
+       data-name="India Gate"
+       data-location="Delhi"
+       data-built="1931"
+       data-type="Monument"
+       onclick="openModal(this)">
+
+  <img src="https://image3.mouthshut.com/images/Restaurant/Photo/-21944_7079.jpg"
+       class="monument"
+       data-name="Charminar"
+       data-location="Hyderabad, Telangana"
+       data-built="1591"
+       data-type="Monument"
+       onclick="openModal(this)">
+
+  <img src="https://wallpaperaccess.com/full/4822006.jpg"
+       class="temple"
+       data-name="Golden Temple"
+       data-location="Amritsar, Punjab"
+       data-built="1581"
+       data-type="Temple"
+       onclick="openModal(this)">
+
+  <img src="https://tse1.mm.bing.net/th/id/OIP.c8dEhmbWHRufYVzYRJXJowHaFj?rs=1&pid=ImgDetMain&o=7&rm=3"
+       class="temple"
+       data-name="Meenakshi Temple"
+       data-location="Madurai, Tamil Nadu"
+       data-built="1623"
+       data-type="Temple"
+       onclick="openModal(this)">
+
+</div>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+
+    <span class="close-btn" onclick="closeModal()">×</span>
+
+    <img id="modalImg">
+
+    <div class="modal-info">
+      <h2 id="wonderName"></h2>
+
+      <div class="wonder-details">
+        <p><strong>Location:</strong> <span id="wonderLocation"></span></p>
+        <p><strong>Built:</strong> <span id="wonderBuilt"></span></p>
+        <p><strong>Type:</strong> <span id="wonderType"></span></p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- BOTTOM NAV -->
+<nav class="bottom-nav">
+  <a href="#">Home</a>
+  <a href="#">Wonders</a>
+  <a href="#">Contact</a>
+</nav>
+
+<script src="script.js"></script>
+
+</body>
+</html>
