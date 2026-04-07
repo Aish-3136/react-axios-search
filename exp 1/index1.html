@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aishwarya Kadam | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00adb5;
+    }
+
+    .hero {
+      height: 100vh;
+      background: linear-gradient(to right, #00adb5, #393e46);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+    }
+
+    .hero p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: white;
+      color: #333;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .secondary:hover {
+      background: white;
+      color: #333;
+    }
+
+    section {
+      padding: 60px 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      background: #f4f4f4;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #e0f7fa;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: white;
+    }
+
+    .contact a {
+      color: #00adb5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">My Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section id="hero" class="hero">
+  <div>
+    <h1>Hi, I'm Aishwarya Kadam</h1>
+    <p>Fullstack Web Developer passionate about building modern web apps</p>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn secondary">Contact Me</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I design and develop responsive, efficient, and user-friendly web applications.
+      I enjoy solving problems and building real-world projects using modern technologies.
+    </p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">React</div>
+      <div class="card">Node.js</div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3>Keylogger</h3>
+        <p>Cybersecurity project for monitoring keystrokes.</p>
+      </div>
+
+      <div class="card">
+        <h3>Student Attendance System</h3>
+        <p>Web-based system to track and manage attendance.</p>
+      </div>
+
+      <div class="card">
+        <h3>BuyWise Price Comparator</h3>
+        <p>Compares product prices across multiple platforms.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>Email: aishakadam3136@example.com</p>
+    <p>
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Aishwarya Kadam</p>
+</footer>
+
+</body>
+</html>
